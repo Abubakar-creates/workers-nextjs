@@ -70,7 +70,7 @@ const Page = () => {
             <div>
                 <div className='bg-[#12937C] flex flex-col justify-center items-center mt-10 py-6 max-md:px-5 text-white ' >
                     <h1 className='text-[1.8rem] max-sm:text-[1.5rem] font-[700]  ' >Get Matched with Local Professtionals</h1>
-                    <p className='text-[1.1rem] max-sm:text-[.9rem] font-[300] '>Answer a few questions,and we'll put you in touch with pros who can help.</p>
+                    <p className='text-[1.1rem] max-sm:text-[.9rem] font-[300] '>Answer a few questions,and we&apos;ll put you in touch with pros who can help.</p>
                     <div className="flex mt-10 max-md:mt-6 max-md:justify-between max-md:w-[100%] ">
                         <div className="max-md:w-[60%]">
                             <input
@@ -160,8 +160,8 @@ const Page = () => {
                                         {suggestedFilterOpen && (
                                             <div class="w-full items-center flex mx-3 -mt-1">
                                                 <form action="" className="flex flex-col gap-2">
-                                                    {data?.suggestedFilters?.map((value) => (
-                                                        <div className="flex items-center cursor-pointer">
+                                                    {data?.suggestedFilters?.map((value, index) => (
+                                                        <div key={index} className="flex items-center cursor-pointer">
                                                             <input
                                                                 type="checkbox"
                                                                 id="categories"
@@ -222,8 +222,8 @@ const Page = () => {
                                         {categoryOpen && (
                                             <div class="w-full items-center flex mx-3 mt-6">
                                                 <form action="" className="flex flex-col gap-2">
-                                                    {data?.professionalCategory?.map((value) => (
-                                                        <div className="flex items-center cursor-pointer">
+                                                    {data?.professionalCategory?.map((value , index) => (
+                                                        <div key={index} className="flex items-center cursor-pointer">
                                                             <input
                                                                 type="radio"
                                                                 id="categories"
@@ -266,8 +266,8 @@ const Page = () => {
                                         {credentialsOpen && (
                                             <div class="w-full items-center flex mx-3 -mt-1">
                                                 <form action="" className="flex flex-col gap-2">
-                                                    {data?.credentials?.map((value) => (
-                                                        <div className="flex items-center cursor-pointer">
+                                                    {data?.credentials?.map((value,index) => (
+                                                        <div key={index} className="flex items-center cursor-pointer">
                                                             <input
                                                                 type="checkbox"
                                                                 id="categories"
@@ -310,8 +310,8 @@ const Page = () => {
                                         {bussinessHighlightsOpen && (
                                             <div class="w-full items-center flex mx-3 -mt-1">
                                                 <form action="" className="flex flex-col gap-2">
-                                                    {data?.businessHighlights?.map((value) => (
-                                                        <div className="flex items-center cursor-pointer">
+                                                    {data?.businessHighlights?.map((value,index) => (
+                                                        <div  key={index} className="flex items-center cursor-pointer">
                                                             <input
                                                                 type="checkbox"
                                                                 id="categories"
@@ -354,8 +354,8 @@ const Page = () => {
                                         {languagesOpen && (
                                             <div class="w-full items-center flex mx-3 -mt-1">
                                                 <form action="" className="flex flex-col gap-2">
-                                                    {data?.languages?.map((value) => (
-                                                        <div className="flex items-center cursor-pointer">
+                                                    {data?.languages?.map((value,index) => (
+                                                        <div key={index} className="flex items-center cursor-pointer">
                                                             <input
                                                                 type="radio"
                                                                 id="categories"
@@ -398,8 +398,8 @@ const Page = () => {
                                         {ratingOpen && (
                                             <div class="w-full items-center flex mx-3 -mt-1">
                                                 <form action="" className="flex flex-col gap-2">
-                                                    {data?.rating?.map((value) => (
-                                                        <div className="flex items-center cursor-pointer">
+                                                    {data?.rating?.map((value,index) => (
+                                                        <div key={index} className="flex items-center cursor-pointer">
                                                             <input
                                                                 type="radio"
                                                                 id="categories"
@@ -423,8 +423,8 @@ const Page = () => {
                             </div>
                         </div>
                         <div className='lg:w-[75%] max-md:[100%] max-md:mt-5 gap-2 '>
-                            {postData?.map((value) => (
-                                <div className='bg-[#F7F9FB] p-4 rounded-xl flex max-md:flex-col items-center gap-5 mb-5'>
+                            {postData?.map((value ,index) => (
+                                <div key={index} className='bg-[#F7F9FB] p-4 rounded-xl flex max-md:flex-col items-center gap-5 mb-5'>
                                     <div><img src="/assets/dream.png" alt="" className='h-[250px] w-[350px]' /></div>
                                     <div>
                                         <div className='flex max-sm:items-center gap-5' >
@@ -472,8 +472,8 @@ const Page = () => {
                     <h5 className='text-[1.8rem] font-[500] ' >Featured Reviews for Basement Remodelers in Chicago</h5>
 
                     <div className='grid lg:grid-cols-2 gap-5 mt-[3rem]' >
-                        {reviewsData?.map((value) => (
-                            <div className='bg-white px-5 py-8 rounded-xl  ' >
+                        {reviewsData?.map((value , index) => (
+                            <div key={index} className='bg-white px-5 py-8 rounded-xl  ' >
                                 <div className='flex gap-5' >
                                     <div className='bg-white p-3 rounded-full' >
                                         <img src="/assets/helperz-one.png" alt="" className='h-[50px] w-[50px] ' />
@@ -495,7 +495,7 @@ const Page = () => {
                                     </div>
                                 </div>
 
-                                <p className='mt-5 text-[.9rem] max-md:text-[.8rem] ' >“Michael was extremely exceptional with his service from beginning to end. I wasn't really even sure what I was going for with my bathroom remodel and he was amazing with guiding me on ideas with what’s modern, traditional or a mix of both. Execution was on point and I could not be happier. I get so many compliments on the design and quality of work. Definitely recommend him, and he will be who I call to do my kitchen remodel, as well.”</p>
+                                <p className='mt-5 text-[.9rem] max-md:text-[.8rem] ' >&apos;Michael was extremely exceptional with his service from beginning to end. I wasn&apos;t really even sure what I was going for with my bathroom remodel and he was amazing with guiding me on ideas with what&apos;s modern, traditional or a mix of both. Execution was on point and I could not be happier. I get so many compliments on the design and quality of work. Definitely recommend him, and he will be who I call to do my kitchen remodel, as well.&apos;</p>
                             </div>
                         ))}
                     </div>
