@@ -136,8 +136,8 @@ const Home = () => {
                 <h1 className='text-center text-[29px] font-[600] pb-10 max-md:text-[23px]'>You Need It, We&apos;ve Got It</h1>
                 <div className="grid grid-cols-5 max-md:grid-cols-2 max-md:w-[95%] max-md:gap-2 w-[70%] m-auto gap-6" >
 
-                    {work?.map((value) => (
-                        <div className='flex flex-col justify-center items-center bg-[#F7F9FB] rounded-xl p-4 h-[150px] cursor-pointer border-r-2 border-b-2 border-white hover:border-[#119DED99] hover:shadow-sm hover:shadow-[#119DED99]  ' >
+                    {work?.map((value ,index) => (
+                        <div key={index} className='flex flex-col justify-center items-center bg-[#F7F9FB] rounded-xl p-4 h-[150px] cursor-pointer border-r-2 border-b-2 border-white hover:border-[#119DED99] hover:shadow-sm hover:shadow-[#119DED99]  ' >
                             <img src={value?.image} className='w-[52px] h-[52px]' alt="Avatar" />
                             <h1 className='font-[600] text-[16px] mt-2 text-center max-md:text-[13px]' >{value?.name}</h1>
                         </div>
