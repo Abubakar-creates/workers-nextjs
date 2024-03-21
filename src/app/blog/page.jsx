@@ -135,7 +135,7 @@ const Page = () => {
       <div className="bg-[#12937C1A]">
         <div className="grid grid-cols-4 max-md:grid-cols-2 w-[80%] m-auto mt-6 p-4 gap-10">
           {points?.map((value, index) => (
-            <h1
+            <h1 key={index}
               className={` font-[500] text-[1.1rem] text-center p-[4px] rounded-xl cursor-pointer ${
                 index === selected ? "bg-white text-[#12937C]" : ""
               }  `}
@@ -358,8 +358,8 @@ const Page = () => {
             </button>
           </div>
 
-          {helperz?.map((value) => (
-            <div className="border-[1px] border-[#64B6E3] p-4 rounded-xl flex flex-col">
+          {helperz?.map((value , index) => (
+            <div key={index} className="border-[1px] border-[#64B6E3] p-4 rounded-xl flex flex-col">
               <div className="flex gap-4">
                 <img src={value?.image} alt="image" className="w-12 h-12" />
                 <div className="mt-2">
@@ -390,8 +390,8 @@ const Page = () => {
       <div className="py-10 w-[70%] max-md:w-[95%] m-auto">
         <h1 className="text-[28px] font-[400] pb-10">Popular cost guides</h1>
         <div className="grid grid-cols-3 max-md:grid-cols-2 max-md:gap-2 m-auto gap-6">
-          {cost?.map((value) => (
-            <div className="flex flex-col bg-[#F7F9FB] rounded-xl cursor-pointer border-r-2 p-4 py-6 border-b-2 border-white hover:border-[#55DCC4CC]">
+          {cost?.map((value ,index) => (
+            <div key={index} className="flex flex-col bg-[#F7F9FB] rounded-xl cursor-pointer border-r-2 p-4 py-6 border-b-2 border-white hover:border-[#55DCC4CC]">
               <button className="bg-[#55DCC4CC] mr-auto p-2 rounded-xl font-[400] text-[14px] max-md:text-[12px]">
                 Helperzz Cost Guids
               </button>
@@ -420,8 +420,8 @@ const Page = () => {
     </center>
 </div>
 
-          {updates?.map((value) => (
-           <div className="bg-gradient-to-b from-[#FFFFFF39] to-[#12937C28] p-4 border-[1px] border-[#12937C] rounded-xl flex flex-col justify-between">
+          {updates?.map((value , index) => (
+           <div  key={index} className="bg-gradient-to-b from-[#FFFFFF39] to-[#12937C28] p-4 border-[1px] border-[#12937C] rounded-xl flex flex-col justify-between">
            <div>
              <h1 className="font-[600] text-gray-700 text-[18px]">{value?.name}</h1>
              <h1 className="font-[200] text-[14px] text-gray-500  mt-4">{value?.description}</h1>
