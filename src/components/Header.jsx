@@ -21,7 +21,7 @@ const Header = () => {
                 <GiHamburgerMenu onClick={toggleDrawer()} />
 
             </div>
-            <div className="flex justify-between bg-transparent	 max-md:hidden w-[90%] m-auto pt-6">
+            {/* <div className="flex justify-between bg-transparent	 max-md:hidden w-[90%] m-auto pt-6">
 
                 <div className="flex items-center h-12">
                     <h1 className="font-bold text-[40px] ml-2">H</h1>
@@ -62,8 +62,67 @@ const Header = () => {
                     </button>
                 </div>
 
-            </div>
+            </div> */}
 
+                <header className="flex flex-wrap justify-center lg:justify-between items-center">
+            <div className="w-full lg:w-5/12">
+              <div className="flex justify-start lg:justify-center items-center gap-10">
+                {/* <Image src="/assets/banner.png" alt="logo" width={20} height={20} /> */}
+                <Link href="/" className="font-bold text-[40px] ml-2 max-md:hidden cursor-pointer">H</Link>
+                <div className="hidden lg:block">
+                  <ul className="flex gap-10">
+                    <li>
+                      <a href="#">Browse Categories</a>
+                    </li>
+                    <li>
+                      <Link href="/blog">Blog</Link>
+                    </li>
+                    <li>
+                      <a href="#">Write a Review</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="w-full lg:w-7/12 hidden lg:block">
+              <div className="flex  items-center justify-center lg:justify-end gap-7 ">
+                <div className="flex items-center h-12">
+                    <div className="flex">
+
+                        <input
+                            type="search"
+                            name="search"
+                            placeholder="Search for Category "
+                            className="pl-2 py-2 rounded-l-xl  text-[15px] border-gray-400  border-[1px] outline-none  flex-1 bg-transparent"
+                        />
+                        <input
+                            type="search"
+                            name="search"
+                            placeholder="Oshawa"
+                            className=" py-2 pl-2 text-[15px] border-gray-400  border-t-[1px] border-b-[1px] border-r-[1px] outline-none bg-transparent  w-[5.5rem] "
+                        />
+                        <IoSearch className="border-t-[1px] border-b-[1px] border-r-[1px] border-gray-400 text-[12px]  rounded-r-xl text-gray-600 py-2 bg-transparent" size={40} />
+
+                    </div>
+                    </div>
+
+
+                <div>
+                  <ul className="flex gap-10">
+                    <li>
+                      <Link href="/login">Login</Link>
+                    </li>
+                    <li>
+                      <Link href="/register">Signup</Link>
+                    </li>
+                  </ul>
+                </div>
+                <button className="bg-[#119DED] text-white rounded-md px-3 py-3 uppercase font-semibold text-sm">
+                  Are You a Home Pro?
+                </button>
+              </div>
+            </div>
+          </header>
             <div>
                 <Drawer                  
                   variant="persistent"

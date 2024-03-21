@@ -7,6 +7,7 @@ import { GrLocation } from "react-icons/gr";
 import { PiBathtub } from "react-icons/pi";
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Image from 'next/image';
 
 const work = [{ name: "Bathroom Renovation", image: "./assets/need1.png" },
 { name: "Roofting", image: "./assets/need1.png" },
@@ -61,7 +62,7 @@ const Home = () => {
 
     return (
         <div>
-            <div className=" bg-[#F6F6F6]">
+            {/* <div className=" bg-[#F6F6F6]">
                 <div
                     className="w-full h-[89vh] bg-cover bg-no-repeat max-md:bg-contain  max-md:!bg-none"
                     style={{
@@ -116,17 +117,100 @@ const Home = () => {
                                 <button className="bg-transparent border max-md:px-[10px] mt-[-2px] text-[14px] max-md:text-[15px] border-gray-900 rounded-full px-5 py-[6px] font-[500] hover:bg-black hover:text-white focus:outline-none">
                                     Contractors
                                 </button>
-                                {/* <button className="bg-transparent border max-md:px-[10px] max-md:text-[15px] border-gray-900 rounded-full px-5 py-[6px] font-[500] hover:bg-black hover:text-white focus:outline-none">
+                                <button className="bg-transparent border max-md:px-[10px] max-md:text-[15px] border-gray-900 rounded-full px-5 py-[6px] font-[500] hover:bg-black hover:text-white focus:outline-none">
                                     Architects
                                 </button>
                                 <button className="bg-transparent border max-md:px-[10px] max-md:text-[15px] border-gray-900 rounded-full px-5 py-[6px] font-[500] hover:bg-black hover:text-white focus:outline-none">
                                     See More
-                                </button> */}
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div> */}
+
+
+<div className="bg-cover pb-20 pt-5 bg-[#F6F6F6]  " style={{
+                        backgroundImage: `url('./assets/banner.png')`,
+                    }}>
+  
+<Header />
+           
+
+        <div className="max-w-screen-md mx-auto mt-20">
+          <div className="flex flex-col gap-8 px-10">
+            <p className="text-[38px]">
+              The Best Place
+              <br />
+              To Find Professionals
+            </p>
+            <p>
+              Thousands of homeowners connect with the right pro every week for
+              their remodeling projects. Ready to find yours?
+            </p>
+            <form>
+              <div className="flex flex-wrap lg:flex-nowrap justify-normal lg:justify-center items-center lg:bg-white rounded-none lg:rounded-full">
+                <div className="relative w-full lg:w-6/12">
+                  <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <IoSearch
+                                          width={18}
+                      height={15}
+                    />
+                  </div>
+
+                  <div className="flex">
+                    <input
+                      type="search"
+                      id="default-search"
+                      className="block w-full p-4 ps-10 text-gray-900 border-none lg:rounded-s-full focus:outline-none bg-gray-50 placeholder:text-[#888888]  rounded-full"
+                      placeholder="What service do you need?"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="relative w-6/12 lg:w-2/6 mt-2 lg:mt-0">
+                  <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <GrLocation
+                      
+                      width={25}
+                      height={16}
+                    />
+                  </div>
+
+                  <div className="flex">
+                    <input
+                      type="search"
+                      id="default-search"
+                      className="block w-full p-4 ps-12  text-gray-900 border border-none lg:rounded-s-none bg-gray-50 focus:outline-none placeholder:text-[#888888] rounded-full"
+                      placeholder="Postal Code"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="w-5/12 lg:w-3/12">
+                  <button className="bg-[#119DED] text-white rounded-full w-full py-[18px] uppercase  text-sm px-2 font-semibold mt-5 lg:mt-0 shadow-lg ml-5 lg:ml-0">
+                    Get Quotes
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div className="flex flex-col lg:flex-row flex-wrap  items-center gap-5">
+              <p className="text-lg lg:text-[25px] font-semibold">
+                <span>Hire a pro:</span>
+              </p>
+              <div className="flex gap-5 items-center flex-wrap">
+                <button className="border-2 border-black rounded-full text-black py-2 px-4 font-semibold hover:bg-black hover:text-white">
+                  Contractors
+                </button>
+                 
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+            
             <img src="./assets/second-banner.png" className='md:hidden w-[100%] mt-[-20px]' alt="" />
 
 
@@ -170,7 +254,7 @@ const Home = () => {
             <div className='py-10 w-[70%] max-md:w-[95%] m-auto'>
 
                 <h1 className=' text-[29px] font-[600] pb-10 max-md:text-[23px] max-md:text-center'>Popular cost guides</h1>
-                <div className="grid grid-cols-3 max-md:grid-cols-2 max-md:gap-2 m-auto gap-6" >
+                <div className="grid grid-cols-3 max-md:grid-cols-1 max-md:w-[60%] max-md:m-auto   max-md:gap-2 m-auto gap-6" >
 
                     {cost?.map((value, index) => (
                         <div key={index} className='flex flex-col bg-[#F7F9FB] rounded-xl cursor-pointer border-r-2 p-4 py-6 border-b-2 border-white hover:border-[#55DCC4CC]' >
@@ -242,7 +326,7 @@ const Home = () => {
 
                 <h1 className=' text-[29px] font-[600] max-md:text-[23px] max-md:text-center pb-10'>Top Helperzz</h1>
 
-                <div className="grid grid-cols-4 max-md:grid-cols-2 justify-between gap-4 " >
+                <div className="grid grid-cols-4 max-md:grid-cols-1 justify-between gap-4 " >
                     <div className='bg-[#B7E2FA] p-4 rounded-xl '>
                         <div className='h-[13rem]'>
 
