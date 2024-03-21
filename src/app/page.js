@@ -133,7 +133,7 @@ const Home = () => {
             {/* 2nd section =========== */}
             <div className='py-10'>
 
-                <h1 className='text-center text-[29px] font-[600] pb-10 max-md:text-[23px]'>You Need It, We've Got It</h1>
+                <h1 className='text-center text-[29px] font-[600] pb-10 max-md:text-[23px]'>You Need It, We&apos;ve Got It</h1>
                 <div className="grid grid-cols-5 max-md:grid-cols-2 max-md:w-[95%] max-md:gap-2 w-[70%] m-auto gap-6" >
 
                     {work?.map((value) => (
@@ -153,8 +153,8 @@ const Home = () => {
                 <h1 className='text-center text-[29px] font-[600] pb-10 uppercase max-md:text-[23px]'><span className='max-md:hidden'>our</span> most popular category</h1>
                 <div className="grid grid-cols-3 max-md:grid-cols-2 max-md:w-[95%] max-md:gap-2 w-[70%] m-auto gap-6" >
 
-                    {category?.map((value) => (
-                        <div className='flex flex-col justify-center items-center bg-[#119DED26] rounded-xl h-[195px] cursor-pointer border-r-2 border-b-2 border-white hover:border-[#119DED99] hover:shadow-sm hover:shadow-[#119DED99]  p-4' >
+                    {category?.map((value , index) => (
+                        <div key={index} className='flex flex-col justify-center items-center bg-[#119DED26] rounded-xl h-[195px] cursor-pointer border-r-2 border-b-2 border-white hover:border-[#119DED99] hover:shadow-sm hover:shadow-[#119DED99]  p-4' >
                             <img src={value?.image} className='w-[52px] h-[52px]' alt="Avatar" />
                             <h1 className='font-[600] text-[16px] mt-2 text-center max-md:'>{value?.name}</h1>
                             <h1 className='font-[400] text-[13px] mt-2 text-center'>{value?.description}</h1>
@@ -172,8 +172,8 @@ const Home = () => {
                 <h1 className=' text-[29px] font-[600] pb-10 max-md:text-[23px] max-md:text-center'>Popular cost guides</h1>
                 <div className="grid grid-cols-3 max-md:grid-cols-2 max-md:gap-2 m-auto gap-6" >
 
-                    {cost?.map((value) => (
-                        <div className='flex flex-col bg-[#F7F9FB] rounded-xl cursor-pointer border-r-2 p-4 py-6 border-b-2 border-white hover:border-[#55DCC4CC]' >
+                    {cost?.map((value, index) => (
+                        <div key={index} className='flex flex-col bg-[#F7F9FB] rounded-xl cursor-pointer border-r-2 p-4 py-6 border-b-2 border-white hover:border-[#55DCC4CC]' >
                             <button className="bg-[#55DCC4CC] mr-auto p-2 rounded-xl font-[400] text-[14px] max-md:text-[12px]">Helperzz Cost Guids</button>
                             <h1 className='font-[600] text-[19px] mt-4 capitalize max-md:text-[16px]'>{value?.name}</h1>
                         </div>
@@ -253,8 +253,8 @@ const Home = () => {
                         <button className='font-[600] text-[15px] px-4 py-[6px] rounded-xl bg-white capitalize shadow-xl '>View <span className='max-md:hidden'>all</span> top helperzz</button>
                     </div>
 
-                    {helperz?.map((value) => (
-                        <div className='border-[1px] border-[#64B6E3] p-4 rounded-xl flex flex-col'>
+                    {helperz?.map((value , index) => (
+                        <div key={index} className='border-[1px] border-[#64B6E3] p-4 rounded-xl flex flex-col'>
                             <div className="flex gap-4">
                                 <img src={value?.image} alt="image" className="w-12 h-12" />
                                 <div className='mt-2'>
@@ -325,7 +325,7 @@ const Home = () => {
                     <div>
                         <img width={"100%"} className="rounded-xl" src='./assets/success.png' alt="success story" />
                     </div>
-                    <h1 className="mt-6">"As an employee, I also use Helperzz because I trust the service".</h1>
+                    <h1 className="mt-6">&apos;As an employee, I also use Helperzz because I trust the service&apos;.</h1>
                     <h1 className="mt-4 font-semibold">Ruth, major roofing project</h1>
                     <button className="border-[1px] border-[#43D9BE80] rounded-lg w-[180px] h-10 mx-auto mt-36 hover:bg-[#43D9BE80] hover:text-white">Success Stories</button>
                 </div>
@@ -335,12 +335,12 @@ const Home = () => {
             <h1 className=" text-center text-[28px] font-[600]">HELPERZZ</h1>
             <h1 className=" text-center text-[18px] font-[400]">REVIEWS</h1>
             <div className="grid grid-cols-1 mt-8 w-[80%] m-auto mb-4 lg:grid-cols-3 md:grid-cols-2">
-                {review?.map((value) => (
-                    <div className="flex flex-col bg-[#F7F9FB] rounded-xl items-center m-6 py-4 px-4 ">
+                {review?.map((value , index) => (
+                    <div key={index} className="flex flex-col bg-[#F7F9FB] rounded-xl items-center m-6 py-4 px-4 ">
                         <h2 className="text-center mt-6 font-bold">HELPERZZ USER</h2>
                         <h2 className='text-[#119DED] text-[1.6rem]'>★ ★ ★ ★ ★</h2>
                         <h5 className="">28.02.2024</h5>
-                        <h5 className=" mt-3 text-center font-[600]">"We use them for most of our home needs.Very reliable and always get great results"</h5>
+                        <h5 className=" mt-3 text-center font-[600]">&apos;We use them for most of our home needs.Very reliable and always get great results&apos;</h5>
                     </div>
 
                 ))}
@@ -352,7 +352,7 @@ const Home = () => {
                 <div class="px-4 mx-auto max-w-screen-xl lg:px-2">
                     <div class="mx-auto max-w-screen-md lg:flex lg:justify-between lg:max-w-screen-lg  ">
                         <div className="flex flex-col lg:w-[50%] lg:items-center text-center lg:py-12">
-                            <h2 class="mb-2 text-2xl font-extrabold lg:text-white sm:text-2xl mt-4">SUDDENLY IT'S ALL SO DOABLE</h2>
+                            <h2 class="mb-2 text-2xl font-extrabold lg:text-white sm:text-2xl mt-4">SUDDENLY IT&apos;S ALL SO DOABLE</h2>
                             <button className="px-6 py-2 bg-white text-black sm:w-[100%] lg:w-[50%] lg:mt-4 rounded-lg font-bold border-black border-[1px] lg:border-none hover:text-[#2B937C] hover:shadow-sm hover:shadow-white" >Post your project</button>
                         </div>
                         <img className=" lg:w-[30%] w-0 " src='./assets/anti.png'

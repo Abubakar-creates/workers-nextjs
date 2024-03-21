@@ -12,7 +12,7 @@ const Page = () => {
             <div>
                 <div className='bg-[#12937C] flex flex-col justify-center items-center mt-10 py-6 text-white ' >
                     <h1 className='text-[1.8rem] font-[700] ' >Get Matched with Local Professtionals</h1>
-                    <p className='text-[1.1rem] font-[300] '>Answer a few questions,and we'll put you in touch with pros who can help.</p>
+                    <p className='text-[1.1rem] font-[300] '>Answer a few questions,and we&apos;ll put you in touch with pros who can help.</p>
                     <div className="flex mt-10 max-md:mt-6 max-md:justify-between max-md:w-[100%] ">
                         <div className="max-md:w-[60%]">
                             <input

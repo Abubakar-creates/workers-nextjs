@@ -154,7 +154,7 @@ const Page = () => {
           <div className="w-[55%] max-md:w-[95%] max-md:m-auto">
             <Image className="w-full" src={worker} />
             <h1 className="text-[20px] font-[600] mt-[-34px] max-md:text-[13px] text-white text-center">
-              Moving Company Spotlight: Let's Get Moving,
+              Moving Company Spotlight: Let&apos;s Get Moving,
             </h1>
           </div>
           <div className="flex flex-col gap-3 w-[45%] max-md:hidden">
@@ -490,7 +490,7 @@ const Page = () => {
                 <div  className="px-4 mx-auto max-w-screen-xl lg:px-2">
                     <div  className="mx-auto max-w-screen-md lg:flex lg:justify-between lg:max-w-screen-lg  ">
                         <div className="flex flex-col lg:w-[50%] lg:items-center text-center lg:py-12">
-                            <h2  className="mb-2 text-2xl font-extrabold lg:text-white sm:text-2xl mt-4">SUDDENLY IT'S ALL SO DOABLE</h2>
+                            <h2  className="mb-2 text-2xl font-extrabold lg:text-white sm:text-2xl mt-4">SUDDENLY IT&apos;S ALL SO DOABLE</h2>
                             <button className="px-6 py-2 bg-white text-black sm:w-[100%] lg:w-[50%] lg:mt-4 rounded-lg font-bold border-black border-[1px] lg:border-none hover:text-[#2B937C] hover:shadow-sm hover:shadow-white" >Post your project</button>
                         </div>
                         <img className=" lg:w-[30%] w-0 " src='./assets/anti.png'

@@ -19,7 +19,7 @@ const Page = () => {
                           alt="logo"
                         />
                         <h4 className=" mt-1 pb-1 text-xl font-semibold">
-                          Welcome Bac
+                          Welcome Back
                         </h4>
                       </div>
 
@@ -62,7 +62,7 @@ const Page = () => {
                         </div>
 
                         <div className="flex items-center justify-between pb-6">
-                          <p className="mb-0 me-2">Don't have an account?</p>
+                          <p className="mb-0 me-2">Don&apos;t have an account?</p>
                           <Link href="/register">
                             <button
                               type="button"
