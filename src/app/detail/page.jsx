@@ -373,7 +373,7 @@ const Page = () => {
                             <p className="" >
                                 hello Belina</p>
                             <p className="w-[50%]" >
-                                We're thrilled to hear about your positive experience! Thank you for choosing our company.</p>
+                                We&lsquo;re thrilled to hear about your positive experience! Thank you for choosing our company.</p>
                         </div>
                         <div className="p-4 rounded-xl bg-white mb-5">
                             <div className="flex gap-5 " >
@@ -421,7 +421,7 @@ const Page = () => {
                             <p className="" >
                                 hello Belina</p>
                             <p className="w-[50%]" >
-                                We're thrilled to hear about your positive experience! Thank you for choosing our company.</p>
+                                We&lsquo;re thrilled to hear about your positive experience! Thank you for choosing our company.</p>
                         </div>
                     </div>
                     <div className="w-[30%] max-md:w-full">
@@ -486,7 +486,7 @@ const Page = () => {
                 <div class="px-4 mx-auto max-w-screen-xl lg:px-2">
                     <div class="mx-auto max-w-screen-md lg:flex lg:justify-between lg:max-w-screen-lg  ">
                         <div className="flex flex-col lg:w-[50%] lg:items-center text-center lg:py-12">
-                            <h2 class="mb-2 text-2xl font-extrabold lg:text-white sm:text-2xl mt-4">SUDDENLY IT'S ALL SO DOABLE</h2>
+                            <h2 class="mb-2 text-2xl font-extrabold lg:text-white sm:text-2xl mt-4">SUDDENLY IT&lsquo;S ALL SO DOABLE</h2>
                             <button className="px-6 py-2 bg-white text-black sm:w-[100%] lg:w-[50%] lg:mt-4 rounded-lg font-bold border-black border-[1px] lg:border-none hover:text-[#2B937C] hover:shadow-sm hover:shadow-white" >Post your project</button>
                         </div>
                         <img className=" lg:w-[30%] w-0 " src='./assets/anti.png'
