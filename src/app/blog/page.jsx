@@ -129,7 +129,7 @@ const Page = () => {
       <Header />
 
       <div className="flex mt-8 ml-[9%]">
-        <h1 className="cursor-pointer">Helperz / </h1>
+        <h1 className="cursor-pointer">Helperz /</h1>
         <h1 className="cursor-pointer pl-2"> Blog </h1>
       </div>
       <div className="bg-[#12937C1A]">
