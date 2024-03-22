@@ -17,7 +17,9 @@ const Header = () => {
     return (
         <>
             <div className='flex md:hidden justify-between px-4 pt-4'>
+               <Link href="/">
                 <h1 className='uppercase text-[1.6rem] font-[600]'>Helperzz</h1>
+               </Link>
                 <GiHamburgerMenu onClick={toggleDrawer()} />
 
             </div>
@@ -64,11 +66,11 @@ const Header = () => {
 
             </div> */}
 
-                <header className="flex flex-wrap justify-center lg:justify-between items-center">
-            <div className="w-full lg:w-5/12">
+                <header className="flex flex-wrap justify-center lg:justify-between items-center pr-10">
+            <div className="w-full lg:w-5/12 m-auto">
               <div className="flex justify-start lg:justify-center items-center gap-10">
                 {/* <Image src="/assets/banner.png" alt="logo" width={20} height={20} /> */}
-                <Link href="/" className="font-bold text-[40px] ml-2 max-md:hidden cursor-pointer">H</Link>
+                <Link href="/" className="font-bold text-[40px] ml-2 hidden lg:block cursor-pointer">H</Link>
                 <div className="hidden lg:block">
                   <ul className="flex gap-10">
                     <li>

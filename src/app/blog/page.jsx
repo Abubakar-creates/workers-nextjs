@@ -130,7 +130,7 @@ const Page = () => {
 
       <div className="flex mt-8 ml-[9%]">
         <h1 className="cursor-pointer">Helperz / </h1>
-        <h1 className="cursor-pointer"> Blog </h1>
+        <h1 className="cursor-pointer pl-2"> Blog </h1>
       </div>
       <div className="bg-[#12937C1A]">
         <div className="grid grid-cols-4 max-md:grid-cols-2 w-[80%] m-auto mt-6 p-4 gap-10">
@@ -148,21 +148,21 @@ const Page = () => {
       </div>
 
       <div className="w-[90%] m-auto py-10">
-        <h1 className="font-[600] text-[28px] pb-6">Featured</h1>
+      <h1 className="text-[28px] font-[400] pb-10">Featured</h1>
 
-        <div className="flex max-md:flex-col w-full md:w-[100%] gap-10">
-          <div className="w-[55%] max-md:w-[95%] max-md:m-auto">
-            <Image className="w-full" src={worker} />
+        <div className="flex max-md:flex-col flex-wrap w-full md:w-[100%] gap-10">
+          <div className="w-[50%] max-lg:w-[95%] max-md:m-auto">
+            <Image className="w-full h-[460px] max-lg:h-[250px]" src={worker} />
             <h1 className="text-[20px] font-[600] mt-[-34px] max-md:text-[13px] text-white text-center">
               Moving Company Spotlight: Let&apos;s Get Moving,
             </h1>
           </div>
-          <div className="flex flex-col gap-3 w-[45%] max-md:hidden">
-            <div className="flex bg-[#E8F5F2] gap-4 rounded-2xl  relative">
+          <div className="flex flex-col flex-wrap gap-3 w-[45%] hidden lg:block">
+            <div className="flex bg-[#E8F5F2] gap-4 rounded-2xl  h-[220px]">
               <Image
                 src={women}
                 alt="women"
-                className="w-[50%] h-[35vh] object-cover rounded-l-2xl"
+                className="w-[50%] h-[220px] object-cover rounded-l-2xl"
               />
               <div className="p-4 flex flex-col justify-between">
                 <div>
@@ -183,18 +183,17 @@ const Page = () => {
                     Celebrate the Dedicated, Hard-Working...
                   </h1>
                 </div>
-                <div className="flex-grow"></div>
-                <h1 className="font-[400] text-[14px] text-[#12937C] cursor-pointer relative bottom-4">
+                 <h1 className="font-[400] text-[14px] text-[#12937C] cursor-pointer ">
                   Read More
                 </h1>
               </div>
             </div>
 
-            <div className="flex bg-[#E8F5F2] gap-4 rounded-2xl  relative">
+            <div className="flex bg-[#E8F5F2] gap-4 rounded-2xl  mt-4 h-[220px]">
               <Image
                 src={women}
                 alt="women"
-                className="w-[50%] h-[35vh] object-cover rounded-l-2xl"
+                className="w-[50%] h-[220px] object-cover rounded-l-2xl"
               />
               <div className="p-4 flex flex-col justify-between">
                 <div>
@@ -214,8 +213,8 @@ const Page = () => {
                     Celebrate the Dedicated, Hard-Working...
                   </h1>
                 </div>
-                <div className="flex-grow"></div>
-                <h1 className="font-[400] text-[14px] text-[#12937C] cursor-pointer relative bottom-4">
+                 
+                <h1 className="font-[400] text-[14px] text-[#12937C] cursor-pointer ">
                   Read More
                 </h1>
               </div>
@@ -229,7 +228,7 @@ const Page = () => {
         <h1 className="text-white font-[600] text-[19px] mt-[4px] text-center">
           Get FREE Qoutes From Trusted Pros
         </h1>
-        <div className="flex max-md:gap-4 max-md:mt-[-5px]">
+        <div className="flex gap-4 max-md:mt-[-5px] justify-center">
         <input
           type="text"
           className="bg-white rounded-md text-[14px] pl-4 py-2 w-[14rem] max-md:w-[12rem] outline-none"
@@ -243,10 +242,10 @@ const Page = () => {
 
       {/* 3rd section ======== */}
 
-      <div className="py-10 w-[70%] max-md:w-[95%] mx-auto">
+      <div className="py-10 w-[70%] max-md:w-[90%] mx-auto">
         <h1 className="text-[28px] font-[400] pb-10">Design</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-md:w-[90%] max-md:m-auto">
           {design?.map((value, index) => (
             <div key={index} className="max-md:mt-4 ">
               <img
@@ -273,10 +272,10 @@ const Page = () => {
 
       {/* 4rd section ======== */}
 
-      <div className="py-10 w-[70%] max-md:w-[95%] mx-auto">
+      <div className="py-10 w-[70%] max-md:w-[90%] mx-auto">
         <h1 className="text-[28px] font-[400] pb-10">Improvement</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-md:w-[90%] max-md:m-auto">
           {improvements?.map((value, index) => (
             <div key={index} className="max-md:mt-4 ">
               <img
@@ -342,8 +341,8 @@ const Page = () => {
       </div>
 
       {/* 6th section =========== */}
-      <div className="py-10 w-[70%] m-auto max-md:w-[95%]">
-        <div className="grid grid-cols-4 max-md:grid-cols-2 justify-between gap-4 ">
+      <div className="py-10 w-[70%] m-auto max-md:w-[70%]">
+        <div className="grid grid-cols-4 max-md:grid-cols-1  justify-between gap-4 max-md:gap-10">
           <div className="bg-[#B7E2FA] p-4 rounded-xl ">
             <div className="h-[13rem]">
               <h1 className="font-[600] text-[24px] w-[9rem]">
@@ -387,15 +386,15 @@ const Page = () => {
       </div>
 
       {/* 7th section =========== */}
-      <div className="py-10 w-[70%] max-md:w-[95%] m-auto">
-        <h1 className="text-[28px] font-[400] pb-10">Popular cost guides</h1>
-        <div className="grid grid-cols-3 max-md:grid-cols-2 max-md:gap-2 m-auto gap-6">
+      <div className="py-10 w-[70%] max-md:w-[90%] m-auto">
+        <h1 className="text-[28px] font-[400] pb-10 max-md:text-[22px]">Popular cost guides</h1>
+        <div className="grid grid-cols-3 max-md:grid-cols-1 max-md:w-[90%] max-md:gap-2 m-auto gap-6">
           {cost?.map((value ,index) => (
-            <div key={index} className="flex flex-col bg-[#F7F9FB] rounded-xl cursor-pointer border-r-2 p-4 py-6 border-b-2 border-white hover:border-[#55DCC4CC]">
+            <div key={index} className="flex flex-col bg-[#F7F9FB] rounded-xl cursor-pointer border-r-2 p-4 py-6 border-b-2 border-white hover:border-[#55DCC4CC] shadow-md">
               <button className="bg-[#55DCC4CC] mr-auto p-2 rounded-xl font-[400] text-[14px] max-md:text-[12px]">
                 Helperzz Cost Guids
               </button>
-              <h1 className="font-[600] text-[19px] mt-4 capitalize max-md:text-[16px]">
+              <h1 className="font-[600] text-[19px] mt-4 capitalize max-md:text-[16px] max-md:text-center">
                 {value?.name}
               </h1>
             </div>
@@ -406,8 +405,8 @@ const Page = () => {
       {/* 8th section =========== */}
 
       <div className="bg-[#F7F9FB] py-10 my-10 ">
-        <div className="grid grid-cols-4 max-md:grid-cols-2 max-md:w-[95%] w-[70%] m-auto gap-6">
-        <div className="bg-[#12937C] rounded-xl p-4 flex flex-col justify-between h-[100%]">
+        <div className="grid grid-cols-4 max-md:grid-cols-1 max-md:w-[80%] w-[70%] m-auto gap-6">
+        <div className="bg-[#12937C] rounded-xl p-4 flex flex-col justify-between  ">
   <h1 className="text-[27px] text-white uppercase text-center max-md:text-[20px]">
     Helperzz Updates
   </h1>
@@ -421,7 +420,7 @@ const Page = () => {
 </div>
 
           {updates?.map((value , index) => (
-           <div  key={index} className="bg-gradient-to-b from-[#FFFFFF39] to-[#12937C28] p-4 border-[1px] border-[#12937C] rounded-xl flex flex-col justify-between">
+           <div  key={index} className="bg-gradient-to-b from-[#FFFFFF39] to-[#12937C28] p-4 border-[1px] border-[#12937C] rounded-xl flex flex-col justify-between min-h-[220px]">
            <div>
              <h1 className="font-[600] text-gray-700 text-[18px]">{value?.name}</h1>
              <h1 className="font-[200] text-[14px] text-gray-500  mt-4">{value?.description}</h1>
@@ -441,7 +440,7 @@ const Page = () => {
 {/* 9th section ========= */}
 
       <div className="py-6 my-10 bg-[#F7F9FB] ">
-        <div className="flex max-md:flex-col-reverse max-md:flex-col gap-12 w-[70%] m-auto align-center items-center">
+        <div className="flex max-md:flex-col-reverse max-md:flex-col gap-12 w-[70%] max-md:w-[90%] m-auto align-center items-center">
           
           <div className="bg-[#12937C] rounded-xl p-6 ">
             <h1 className="text-center text-white font-[500] text-[20px] capitalize">
