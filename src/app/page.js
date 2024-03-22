@@ -13,22 +13,31 @@ import { useMediaQuery } from '@mui/material';
 
 
 const work = [{ name: "Bathroom Renovation", image: "./assets/need1.png" },
-{ name: "Roofting", image: "./assets/need1.png" },
-{ name: "Handyman services ", image: "./assets/need1.png" },
-{ name: "Interior Design", image: "./assets/need1.png" },
-{ name: "Painting", image: "./assets/need1.png" },
-{ name: "Electronic Repairs", image: "./assets/need1.png" },
-{ name: "Landscape Contractors", image: "./assets/need1.png" },
-{ name: "Lighting", image: "./assets/need1.png" },
-{ name: "Interior Design", image: "./assets/need1.png" },
-{ name: "Home Staging", image: "./assets/need1.png" },]
+{ name: "Roofting", image: "./assets/roof.png" },
+{ name: "Handyman services ", image: "./assets/hammer.png" },
+{ name: "Interior Design", image: "./assets/pen.png" },
+{ name: "Painting", image: "./assets/paint.png" },
+{ name: "Electronic Repairs", image: "./assets/tv.png" },
+{ name: "Landscape Contractors", image: "./assets/cart.png" },
+{ name: "Lighting", image: "./assets/bulb.png" },
+{ name: "Interior Design", image: "./assets/pen.png" },
+{ name: "Home Staging", image: "./assets/sofa.png" },
+{ name: "Electronic Repairs", image: "./assets/tv.png" },
+{ name: "Landscape Contractors", image: "./assets/cart.png" },
+{ name: "Lighting", image: "./assets/bulb.png" },
+{ name: "Interior Design", image: "./assets/pen.png" },
+{ name: "Home Staging", image: "./assets/sofa.png" },
+]
 
 const category = [{ name: "Bathroom Renovation", image: "./assets/need1.png", description: "Tiles, fixtures, plumbing" },
-{ name: "Roofting", image: "./assets/need1.png", description: "Roofing materials and installation." },
-{ name: "Painting ", image: "./assets/need1.png", description: "Brush, canvas, palette, easel." },
-{ name: "Plumber", image: "./assets/need1.png", description: "Bathroom kitchen plumbing" },
-{ name: "Electrical", image: "./assets/need1.png", description: "Electrical installation or testing" },
-{ name: "Gas/ Heating Engineer", image: "./assets/need1.png", description: "Gas boiler - installation" },
+{ name: "Roofting", image: "./assets/roof.png", description: "Roofing materials and installation." },
+{ name: "Painting ", image: "./assets/paint.png", description: "Brush, canvas, palette, easel." },
+{ name: "Plumber", image: "./assets/plumber.png", description: "Bathroom kitchen plumbing" },
+{ name: "Electrical", image: "./assets/light.png", description: "Electrical installation or testing" },
+{ name: "Gas/ Heating Engineer", image: "./assets/gas.png", description: "Gas boiler - installation" },
+{ name: "Plumber", image: "./assets/plumber.png", description: "Bathroom kitchen plumbing" },
+{ name: "Electrical", image: "./assets/light.png", description: "Electrical installation or testing" },
+{ name: "Gas/ Heating Engineer", image: "./assets/gas.png", description: "Gas boiler - installation" },
 
 ]
 
@@ -52,10 +61,14 @@ const helperz = [
     { name: "Gitano", experties: "Roofting", image: "./assets/helperz-one.png", point: [{ name: "Roofting Repair" }, { name: "Roof Inspection" }, { name: "Roof Maintenance" }] },
     { name: "Remodel", experties: "Bathroom Renovation", image: "./assets/helperz-two.png", point: [{ name: "Bathroom Renovation" }, { name: "Plumbing" }, { name: "Cabinetry and Storage" }] },
     { name: "Erevan", experties: "Painting", image: "./assets/helperz-three.png", point: [{ name: "Surface Preparation" }, { name: "Protection" }, { name: "Paint Selection" }, { name: "Cleanup" },] },
+    { name: "Remodel", experties: "Bathroom Renovation", image: "./assets/helperz-two.png", point: [{ name: "Bathroom Renovation" }, { name: "Plumbing" }, { name: "Cabinetry and Storage" }] },
+    { name: "Erevan", experties: "Painting", image: "./assets/helperz-three.png", point: [{ name: "Surface Preparation" }, { name: "Protection" }, { name: "Paint Selection" }, { name: "Cleanup" },] },
 ]
 
 const review = [
     { name: "Gitano", experties: "Roofting", image: "./assets/helperz-one.png", point: [{ name: "Roofting Repair" }, { name: "Roof Inspection" }, { name: "Roof Maintenance" }] },
+    { name: "Remodel", experties: "Bathroom Renovation", image: "./assets/helperz-two.png", point: [{ name: "Bathroom Renovation" }, { name: "Plumbing" }, { name: "Cabinetry and Storage" }] },
+    { name: "Erevan", experties: "Painting", image: "./assets/helperz-three.png", point: [{ name: "Surface Preparation" }, { name: "Protection" }, { name: "Paint Selection" }, { name: "Cleanup" },] },
     { name: "Remodel", experties: "Bathroom Renovation", image: "./assets/helperz-two.png", point: [{ name: "Bathroom Renovation" }, { name: "Plumbing" }, { name: "Cabinetry and Storage" }] },
     { name: "Erevan", experties: "Painting", image: "./assets/helperz-three.png", point: [{ name: "Surface Preparation" }, { name: "Protection" }, { name: "Paint Selection" }, { name: "Cleanup" },] },
 ]
@@ -86,7 +99,7 @@ useEffect(() => {
 // 2nd section pagination ========
 
 const isMobile2 = useMediaQuery("(max-width: 800px)");
-const itemsPerPage2 = isMobile2 ? 2 : 8; 
+const itemsPerPage2 = isMobile2 ? 2 : 6; 
 
 const [currentPage2, setCurrentPage2] = useState(1);
 const handlePageChange2 = (event, newPage) => {
@@ -251,10 +264,7 @@ useEffect(() => {
               <div className="flex flex-wrap lg:flex-nowrap justify-normal lg:justify-center items-center lg:bg-white rounded-none lg:rounded-full">
                 <div className="relative w-full lg:w-6/12">
                   <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <IoSearch
-                                          width={18}
-                      height={15}
-                    />
+                    <IoSearch     width={18}  height={15} />
                   </div>
 
                   <div className="flex">
@@ -320,8 +330,8 @@ useEffect(() => {
                 <div className="grid grid-cols-5 max-md:grid-cols-2 max-md:w-[95%] max-md:gap-2 w-[70%] m-auto gap-6" >
 
                     {paginatedData1?.map((value ,index) => (
-                        <div key={index} className='flex flex-col justify-center items-center bg-[#F7F9FB] rounded-xl p-4 h-[150px] cursor-pointer border-r-2 border-b-2 border-white hover:border-[#119DED99] hover:shadow-sm hover:shadow-[#119DED99]  ' >
-                            <img src={value?.image} className='w-[52px] h-[52px]' alt="Avatar" />
+                        <div key={index} className='flex flex-col justify-center items-center bg-[#F7F9FB] rounded-xl p-6 h-[150px] cursor-pointer border-r-2 border-b-2 border-white hover:border-[#119DED99] hover:shadow-sm hover:shadow-[#119DED99]  ' >
+                            <img src={value?.image} className='w-[32px]' alt="Avatar" />
                             <h1 className='font-[600] text-[16px] mt-2 text-center max-md:text-[13px]' >{value?.name}</h1>
                         </div>
 
@@ -338,7 +348,7 @@ useEffect(() => {
 
                     {paginatedData2?.map((value , index) => (
                         <div key={index} className='flex flex-col justify-center items-center bg-[#119DED26] rounded-xl h-[195px] cursor-pointer border-r-2 border-b-2 border-white hover:border-[#119DED99] hover:shadow-sm hover:shadow-[#119DED99]  p-4' >
-                            <img src={value?.image} className='w-[52px] h-[52px]' alt="Avatar" />
+                            <img src={value?.image} className='w-[40px]' alt="Avatar" />
                             <h1 className='font-[600] text-[16px] mt-2 text-center max-md:'>{value?.name}</h1>
                             <h1 className='font-[400] text-[13px] mt-2 text-center'>{value?.description}</h1>
 
